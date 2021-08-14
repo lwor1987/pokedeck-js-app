@@ -5,20 +5,25 @@ let pokemonList = [
 ];
 console.log(pokemonList);
 
-let pokemonName = "Squirtle (height: 0.5)"
-document.write(pokemonName);
-pokemonName = "Drowzee (height: 1)"
-document.write(pokemonName);
-pokemonName = "Pidgeotto (height: 3.7)"
-document.write(pokemonName);
+pokemonList = "Squirtle (height: 0.5)"
+document.write(pokemonList);
+pokemonList = "Drowzee (height: 1)"
+document.write(pokemonList);
+pokemonList = "Pidgeotto (height: 3.7)"
+document.write(pokemonList);
 
-for(let i=0; i< pokemonList.lenght; i++){
-  if (pokemonList[i].height <0 && pokemonList.height[i] >3){
+
+
+
+for (let i=0 ; i < pokemonList.length; i++){
+  if (pokemonList.height[i] <3 && pokemonList.height[i] >1) {
     console.log(pokemonList.height[i].name + "is average");
-  }else if (pokemonList[i].height < 1){
+  }
+  else if (pokemonList.height[i] < 1){
     console.log(pokemonList.height[i].name + "is small");
   } else {
     console.log(pokemonList.height[i].name + "Wow that's big!")
   }
-
+  {document.write("<p>" + pokemonList[i].name + "</p>");
+  }
 }
