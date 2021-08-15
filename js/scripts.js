@@ -16,16 +16,13 @@ document.write(pokemonList);
 
 
 for (let i = 0 ; i < pokemonList.length; i++){
-
+  //document.write("<p>" + pokemonList[i].name + "</p>");
   if (pokemonList[i].height <3 && pokemonList[i].height >1) {
-    console.log(pokemonList[i].height .name + "is average");
+    console.log(pokemonList[i].height  + "is average");
   }
   else if (pokemonList[i].height < 1){
-    console.log(pokemonList[i].height .name + "is small");
+    console.log(pokemonList[i].height + "is small");
   } else {
-    console.log(pokemonList[i].height .name + "Wow that's big!")
-  }
-  {
-    document.write("<p>" + pokemonList[i].name + "</p>");
+    console.log(pokemonList[i].height + "Wow that's big!")
   }
 }
