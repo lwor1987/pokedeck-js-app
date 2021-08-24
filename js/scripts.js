@@ -48,10 +48,11 @@ var pokemonRepository = (function () {
   ];
 
   function add (pokemon) {
-    pokemonList.push(pokemon);
+    pokemonRepository.add(item);
   }
   function getAll(){
     return pokemonList;
+    pokemonList.getAll();
   }
 
   return {
@@ -60,4 +61,6 @@ var pokemonRepository = (function () {
   };
 })();
 
-pokemonRepository.get
+pokemonRepository.forEach(pokemon => {
+  console.log(pokemon);
+});
