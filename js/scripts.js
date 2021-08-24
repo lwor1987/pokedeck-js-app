@@ -28,13 +28,29 @@ pokemonList.forEach(pokemon => {
   console.log(pokemon);
 });
 
-let pokemonRepository = (function () {
-  let pokemonList = [];
+var pokemonRepository = (function () {
+  var pokemonList = [
+    {
+      name:"Squirtle (height: 0.7)",
+      height: 0.7,
+     types: ['grass','electric']
+   },
+    {
+      name:"Drowzee (height: 1)",
+      height: 1,
+     types: ['bug','dragon']
+   },
+    {
+      name:"Pidgeotto (height: 3.7)",
+      height: 3.7,
+      types: ['normal','flying']
+    },
+  ];
 
   function add (pokemon) {
     pokemonList.push(pokemon);
   }
-  function get All(){
+  function getAll(){
     return pokemonList;
   }
 
@@ -43,3 +59,5 @@ let pokemonRepository = (function () {
     getAll: getAll
   };
 })();
+
+pokemonRepository.get
