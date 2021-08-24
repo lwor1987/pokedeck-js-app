@@ -28,5 +28,5 @@ for (let i = 0 ; i < pokemonList.length; i++){
 }
 
 pokemonList.forEach(pokemon => {
-  console.log(pokemonList);
+  console.log(pokemon);
 });
