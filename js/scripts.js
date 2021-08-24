@@ -18,6 +18,6 @@ let pokemonList = [
 console.log(pokemonList);
 
 
-pokemonList.forEach(function(user) {
-  console.log(pokemonList.Name + 'is' + pokemonList.height + 'this tall.')
+pokemonList.forEach(pokemon => {
+  console.log(pokemon);
 });
