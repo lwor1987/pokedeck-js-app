@@ -27,3 +27,19 @@ for (let i = 0 ; i < pokemonList.length; i++){
 pokemonList.forEach(pokemon => {
   console.log(pokemon);
 });
+
+let pokemonRepository = (function () {
+  let pokemonList = [];
+
+  function add (pokemon) {
+    pokemonList.push(pokemon);
+  }
+  function get All(){
+    return pokemonList;
+  }
+
+  return {
+    add : add,
+    getAll: getAll
+  };
+})();
