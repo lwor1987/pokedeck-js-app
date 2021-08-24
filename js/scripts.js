@@ -22,9 +22,6 @@ for (let i = 0 ; i < pokemonList.length; i++){
   if (pokemonList[i].height >3)
   document.write('<p>' + pokemonList[i].name +  "Wow that's big!" + '</p>');
 
-  document.write("<p>" + pokemonList[i].name + "</p>");
-  if (pokemonList[i].height > 3)
-  document.write('<p>' + "Wow that's big!" + '</p>');
 }
 
 pokemonList.forEach(pokemon => {
