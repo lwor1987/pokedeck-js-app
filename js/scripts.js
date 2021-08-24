@@ -18,6 +18,6 @@ let pokemonList = [
 console.log(pokemonList);
 
 
-pokemonList.forEach(pokemon => {
-  console.log(pokemon);
+pokemonList.forEach(pokemonList => {
+  console.log(pokemonList);
 });
