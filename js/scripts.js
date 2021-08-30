@@ -52,7 +52,7 @@ var pokemonRepository = (function () {
     let listpokemon = document.createElement("li");
 
     let button = document.createElement("button")
-    button.addEventListener('click', clickHandler);
+    button.addEventListener('click', () => console.log(pokemon.name));
 
     button.innerText = pokemon.name;
 
@@ -61,9 +61,7 @@ var pokemonRepository = (function () {
 
     pokemonList.appendChild(listpokemon);
   }
-  function clickHandler(event) {
-   console.log('Button Clicked');
-}
+  
 
   function showDetails(pokemon){
     console.log(pokemon);
