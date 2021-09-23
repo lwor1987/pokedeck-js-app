@@ -1,23 +1,3 @@
-let pokemonList = [
-  {
-    name:"Squirtle (height: 0.7)",
-    height: 0.7,
-   types: ['grass','electric']
- },
-  {
-    name:"Drowzee (height: 1)",
-    height: 1,
-   types: ['bug','dragon']
- },
-  {
-    name:"Pidgeotto (height: 3.7)",
-    height: 3.7,
-    types: ['normal','flying']
-  },
-];
-console.log(pokemonList);
-
-
 let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
@@ -43,12 +23,11 @@ let pokemonRepository = (function () {
     listpokemon.appendChild(button);
 
     pokemonList.appendChild(listpokemon);
+    button.addEventListener("click", function(event){
+      showDetails(pokemon);
+    });
   }
 
-
-  function showDetails(pokemon){
-    console.log(pokemon);
-  }
 
   function loadList () {
     return fetch(apiUrl).then(function (response) {
@@ -66,11 +45,6 @@ let pokemonRepository = (function () {
     })
   }
 
-pokemonRepository.loadList().then(function () {
-  pokemonRepository.getAll().forEach(function(pokemon){
-    pokemoRepository.addListItem(pokemon);
-  });
-
 
 
 function loadDetails(item) {
@@ -83,7 +57,7 @@ function loadDetails(item) {
   }).catch(function (e) {
     console.erroe(e);
   });
-}
+
 
 function showDetails (item) {
   pokemonRepository.loadDetails(item).then(function () {
@@ -98,5 +72,14 @@ return {
   loadList: loadList,
   loadDetails: loadDetails,
   showDetails: showDetails
-};
-})();
+ };
+}();
+
+
+
+
+pokemonRepository.loadList().then(function () {
+  pokemonRepository.getAll().forEach(function(pokemon){
+    pokemoRepository.addListItem(pokemon);
+  });
+});
