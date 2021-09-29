@@ -10,6 +10,7 @@ let pokemonRepository = (function() {
    } else {
      console.log("pokemon is not correct");
   }
+}
   function getAll(){
     return pokemonList;
   }
@@ -88,5 +89,6 @@ return {
 pokemonRepository.loadList().then(function () {
   pokemonRepository.getAll().forEach(function
     (pokemon){
-    pokemoRepository.addListItem(pokemon);
+    pokemonRepository.addListItem(pokemon);
+ });
 });
