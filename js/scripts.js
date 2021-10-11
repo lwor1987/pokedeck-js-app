@@ -29,7 +29,6 @@ filter.addEventListener('input', function () {
 
 
 
-
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
@@ -39,7 +38,7 @@ filter.addEventListener('input', function () {
     button.classList.add('btn', 'btn-primary');
     button.setAttribute('data-toggle', 'modal');
     button.setAttribute('data-target','#pokemonModal');
-   listItem.classList.add('group-list-item');
+   listItem.classList.add('list-group-item');
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
 
