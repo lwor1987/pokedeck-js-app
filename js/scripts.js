@@ -5,7 +5,7 @@ let pokemonRepository = (function(){
 
 
 filter.addEventListener('input', function () {
-  let pokemons = document.querySelectorAll('btn');
+  let pokemons = document.querySelectorAll(".list-item");
   let value = filter.value.toLowerCase();
 
   pokemons.forEach(function (pokemon) {
@@ -29,6 +29,7 @@ filter.addEventListener('input', function () {
 
 
 
+
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
@@ -47,7 +48,7 @@ filter.addEventListener('input', function () {
       showDetails(pokemon);
     });
   }
-  
+
   function showDetails(pokemon){
     pokemonRepository.loadDetails(pokemon).then(function () {
       loadDetails(pokemon).then(function (){
