@@ -1,42 +1,4 @@
 
-/* Modal Styles */
-
-.pokemon-name,
-.modal-title,
-.pokemon-type,
-.pokemon-ability {
-  text-transform: capitalize;
-}
-
-.pokemon-type,
-.pokemon-height,
-.pokemon-ability,
-.pokemon-weight {
-  text-align: left;
-}
-
-.img-fluid {
-  margin-bottom: 30px;
-}
-/* NavBar Styles */
-.navbar {
-  margin-bottom: 20px;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
-/* List Styles */
-
-.unstyled-list {
-  padding: 0;
-}
-
-.list-group-item {
-  border: none;
-  background-color: black;
-}
 
 .button-class{
   background-color: #E9967A;
