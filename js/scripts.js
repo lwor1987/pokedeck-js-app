@@ -32,13 +32,14 @@ filter.addEventListener('input', function () {
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
+    listItem.classList.add("list-item");
+
     let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add('item-button');
     button.classList.add('btn', 'btn-primary');
     button.setAttribute('data-toggle', 'modal');
     button.setAttribute('data-target','#pokemonModal');
-   listItem.classList.add('list-group-item');
+
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
 
@@ -134,9 +135,6 @@ function loadDetails(item) {
 
 
 
-
-
-
 return {
   add: add,
   getAll: getAll,
@@ -144,7 +142,7 @@ return {
   loadList: loadList,
   loadDetails: loadDetails,
   showDetails: showDetails,
-  showModal: showModal,
+  showModal: showModal
  };
 })();
 

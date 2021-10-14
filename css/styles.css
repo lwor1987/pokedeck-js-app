@@ -1,30 +1,22 @@
 
-
-.button-class{
-  background-color: #E9967A;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+body {
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: orange;
-  color: black;
-  border: 2px solid #8B008B;
+  text-align: center;
+ background-color:#FA8072;
+ color: inherit;
 }
 
-.page-header {
-  margin: 0;
-  text-align: center;
-  background-color: #E9967A;
+
+
+.button-styles{
+  background-color: #DC143C;
+  color:black ;
+  text-transform: uppercase;
+  display: inline;
 }
 
 
 
 .pokeImage {
-  height: 150px;
-  margin-left: 250px;
+  width: 150px;
 }
