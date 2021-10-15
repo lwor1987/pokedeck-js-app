@@ -1,6 +1,6 @@
 Pokedex App
 
-I was tasked with making a pokedex app that will be able to load data from an external source. The user should bale to click on the list item and view information about the pokemon from the list. 
+I was tasked with making a pokedex app that will be able to load data from an external source. The user should be able to click on the list item and view information about the pokemon from the list. 
 
 
 Exercise 1 
