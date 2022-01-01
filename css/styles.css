@@ -10,9 +10,12 @@ body {
 
 .button-styles{
   background-color: #DC143C;
+  border: none;
   color:black ;
   text-transform: uppercase;
   display: inline;
+  padding: 15px 32px;
+ margin: 0;
 }
 
 
