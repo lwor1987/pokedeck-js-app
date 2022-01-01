@@ -6,11 +6,9 @@ body {
  color: inherit;
 }
 
-
-
 .button-styles{
   background-color: #DC143C;
-  border: none;
+  border-radius: 2px;
   color:black ;
   text-transform: uppercase;
   display: inline;
@@ -23,3 +21,4 @@ body {
 .pokeImage {
   width: 150px;
 }
+
